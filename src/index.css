@@ -5,8 +5,8 @@ body,
 #root,
 .app,
 .content {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -21,15 +21,17 @@ body,
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #e0e0e0;
+  background: none;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #424242;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* #24303f */

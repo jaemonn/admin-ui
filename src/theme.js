@@ -17,6 +17,28 @@ export const designTokens = (mode) => ({
                 800: "#292929",
                 900: "#141414",
             },
+            white: {
+                100: "#fbfbfc",
+                200: "#f7f8f9",
+                300: "#f3f4f6",
+                400: "#eff1f3",
+                500: "#ebedf0",
+                600: "#bcbec0",
+                700: "#8d8e90",
+                800: "#5e5f60",
+                900: "#2f2f30"
+            },
+            black: {
+                100: "#d3d6d9",
+                200: "#a7acb2",
+                300: "#7c838c",
+                400: "#505965",
+                500: "#24303f",
+                600: "#1d2632",
+                700: "#161d26",
+                800: "#0e1319",
+                900: "#070a0d"
+            },
             primary: {
                 100: "#d0d1d5",
                 200: "#a1a4ab",
@@ -85,6 +107,28 @@ export const designTokens = (mode) => ({
                 700: "#a3a3a3",
                 800: "#c2c2c2",
                 900: "#e0e0e0",
+            },
+            white: {
+                100: "#2f2f30",
+                200: "#5e5f60",
+                300: "#8d8e90",
+                400: "#bcbec0",
+                500: "#ebedf0",
+                600: "#eff1f3",
+                700: "#f3f4f6",
+                800: "#f7f8f9",
+                900: "#fbfbfc",
+            },
+            black: {
+                100: "#070a0d",
+                200: "#0e1319",
+                300: "#161d26",
+                400: "#1d2632",
+                500: "#24303f",
+                600: "#505965",
+                700: "#7c838c",
+                800: "#a7acb2",
+                900: "#d3d6d9",
             },
             primary: {
                 100: "#040509",
@@ -168,7 +212,7 @@ export const themeSettings = (mode) => {
                         light: colors.grey[100],
                     },
                     background: {
-                        default: colors.primary[500],
+                        default: colors.black[900],
                     },
                 }
                 : {
@@ -185,7 +229,7 @@ export const themeSettings = (mode) => {
                         light: colors.grey[100],
                     },
                     background: {
-                        default: "#fcfcfc",
+                        default: '#ebedf0',
                     },
                 }),
         },

@@ -5,8 +5,9 @@ import Layout from "./Layout"
 import { ColorModeContext, useMode } from "./theme"
 import { CssBaseline, ThemeProvider } from "@mui/material"
 import routes from "./config/routes"
-import SidebarNav from "./Layout/Sidebar"
 import Topbar from "./Layout/Topbar"
+import Sidebar from "./Layout/Sidebar"
+import { SidebarProvider } from "./contexts/SidebarContext"
 
 const App = () => {
   const [theme, colorMode] = useMode();
@@ -15,9 +16,10 @@ const App = () => {
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
+      <SidebarProvider>
         <CssBaseline />
         <div className="app">
-          <SidebarNav isSidebar={isSidebar} />
+            <Sidebar isSidebar={isSidebar} />
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar} />
             <Suspense fallback={<LoadingSpinner />}>
@@ -40,6 +42,7 @@ const App = () => {
             </Suspense>
           </main>
         </div>
+        </SidebarProvider>
       </ThemeProvider>
     </ColorModeContext.Provider>
   );
